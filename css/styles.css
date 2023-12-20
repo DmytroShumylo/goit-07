@@ -18,8 +18,7 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -71,12 +70,55 @@ a {
   }
 }
 
+
+.card-advantages{
+  width: 335px;
+  height: 642px;
+  background-color: #124350;
+  border-radius: 24px;
+  padding: 80px 20px;
+}
+
+.advantages-num{
+  color: #fff;
+  display: block;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding-left: 0;
+}
+
+.sfdg li {
+  counter-increment: my-counter;
+  margin-bottom: 8px;
+}
+
+.sfdg li::before {
+  content: counter(my-counter, decimal-leading-zero) ". ";
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 8px;
+}
+.iuytsfdg::before{
+  content: "";
+  width: 295px;
+height: 2px;
+border-radius: 18px;
+background: rgba(251, 251, 251, 0.10);
+
+}
+
+
+
+
 .container {
-  max-width: 320px;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 768px) {
   .container {
